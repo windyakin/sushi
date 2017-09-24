@@ -2,9 +2,10 @@
   "name": "sushi",
   "version": "0.0.1",
   "description": "oh... sushi...",
-  "main": "main.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron": "electron ./src/app.js"
   },
   "repository": {
     "type": "git",
