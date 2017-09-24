@@ -14,8 +14,13 @@ function createWindow() {
     width,
     height,
     frame: false,
+    transparent: true,
     resizable: false,
   });
+
+  mainWindow.setIgnoreMouseEvents(true);
+  mainWindow.setAlwaysOnTop(true, 'floating', 1);
+  mainWindow.maximize();
 
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
